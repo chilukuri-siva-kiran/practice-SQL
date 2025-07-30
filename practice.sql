@@ -42,3 +42,10 @@ select * from employeetable where SALARY>=50000 and SALARY<=70000;
 select * from employeetable where FIRST_NAME="Dinesh";
 select * from employeetable where FIRST_NAME="Dinesh" or FIRST_NAME="Roy";
 select * from employeetable where not FIRST_NAME="Dinesh" and not FIRST_NAME="Roy";
+select * from employeetable where SALARY>60000;
+select * from employeetable where SALARY>50000 and SALARY<70000;
+select concat(FIRST_NAME, " ",LAST_NAME)  from employeetable where SALARY<50000;
+select  FIRST_NAME,SALARY from employeetable order by SALARY asc;
+select * from employeetable where SALARY between 50000 and 70000 order by FIRST_NAME asc;
+ 
+
